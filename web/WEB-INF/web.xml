@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>driverClass</param-name>
+        <param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>connectionString</param-name>
+        <param-value>jdbc:mysql://localhost:3306/report_module</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db_username</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db_password</param-name>
+        <!--<param-value>CXKyE2ZpT%HjbP!4c$</param-value>-->
+        <param-value>root</param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>UploadServlet</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>com.webservice.controller.UploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/UploadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Upload</servlet-name>
+        <jsp-file>/index.html</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Upload</servlet-name>
+        <url-pattern>/index.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Report</servlet-name>
+        <jsp-file>/jasperreport.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Report</servlet-name>
+        <url-pattern>/report</url-pattern>
+    </servlet-mapping>
+    
+<!--        start webservices-->
+
+    <servlet>
+        <servlet-name>ServletAdaptor</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>com.webservice.controller</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAdaptor</servlet-name>
+        <url-pattern>/webAPI/*</url-pattern>
+    </servlet-mapping>
+<!--    end webservices-->
+
+
+<!--        start webservices-->
+
+    <servlet>
+        <servlet-name>ServletAdaptor1</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>com.webservice.Model</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAdaptor1</servlet-name>
+        <url-pattern>/web1API/*</url-pattern>
+    </servlet-mapping>
+    <!--end webservices-->
+</web-app>

@@ -1,0 +1,190 @@
+@media only screen and (max-width: 600px) {
+  
+    
+    .orderTwo{
+        order:2;
+    }
+
+.confirmPage .boxSize {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.confirmPage .boxSize h2{
+    font-size: 25px;
+    font-weight: 600!important;
+}
+.confirmPage .boxSize p{
+    font-size: 14px;
+}
+
+.boxOne{
+    margin-bottom: 20px;
+}
+.SocialIconList ul li {
+    margin-bottom: 12px;
+}
+.SocialIconList ul li a {
+    padding: 1px;
+}
+
+._boxzoom .zoom-thumb {
+    width: 100%;
+}
+
+.piclist li {
+    height: auto;
+}
+.piclist li img {
+    height: 60px;
+    object-fit: cover;
+}
+._boxzoom ._product-images {
+    width: 100%;
+    display: inline-block;
+}
+.picZoomer-pic-wp{
+    height: 275px!important;
+}
+
+ul.piclist{
+    margin-bottom: 8px;
+    justify-content: space-around;
+    display: flex;
+}
+
+
+
+
+.picZoomer-zoom-wp{
+    display: none!important;
+}
+.picZoomer-pic-wp:hover .picZoomer-cursor {
+     display: none!important;
+}
+
+
+.productBox .card-header img {
+     width: 100%; 
+}
+
+.myAlertBox{
+    position:fixed;
+    top: 10px;
+    right: 10px;
+    z-index:9999999;
+    border-radius: 4px;
+    font-size: 13px;
+    white-space: inherit;
+}
+.myAlertBox {
+    padding: 8px 30px 8px 11px;
+}
+.myAlertBox.alert-dismissible .close, .myAlertBox.alert-dismissible .mailbox-attachment-close {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    z-index: 2;
+    padding: 2px 5px;
+    color: #fff;
+    opacity:1;
+}
+
+
+.content-wrapper{
+    margin-top: 7px;
+}
+
+
+
+.cartSection .cartTable .table thead th{
+    font-size: 12px;
+    padding: 7px 5px;
+}
+.cartSection .cartTable .table tbody td{
+    padding: 7px 5px;
+}
+.cartSection .cartTable .table thead th:nth-child(1){
+    min-width: 140px;
+}
+.cartSection .cartTable .table thead th:nth-child(2){
+    min-width: 110px;
+}
+.cartSection .leftSide img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.cartSection .leftSide .proName {
+     font-weight: 500; 
+    font-size: 13px;
+    line-height: 1.1;
+}
+._p-qty .value-button {
+    height: 26px;
+    font-size: 20px;
+}
+._p-qty .value-button {
+    width: 24px;
+}
+._p-qty input.inputIncDec {
+    border-top: 1px solid #102f42;
+    border-bottom: 1px solid #102f42;
+    width: 43px!important;
+    height: 26px;
+}
+
+
+
+.noWrapTable table td{
+    white-space: nowrap;
+}
+.tableScrollWrap .darkBlueBg td{
+    font-size: 14px!important;
+    font-weight: 600!important;
+}
+.profileCard .card-body {
+    padding: 20px 20px;
+}
+
+
+.searchWrap input {
+    width: 100%;
+}
+
+
+.headerText h2 {
+    font-size: 19px;
+}
+.productBox .priceBox h2{
+    font-size: 16px;
+}
+.profileCard .form-group {
+    margin-bottom: 7px;
+}
+
+.profileCard .profileProgreeBar .progress{
+    width:150px;
+}
+
+
+
+
+
+.flexColumnMob{
+    flex-direction: column;
+}
+.flexColumnMob .btn100{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+}
